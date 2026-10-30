@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CampusBot - an educational AI-style chatbot demo">
+  <title>CampusBot | AI Chatbot</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">✳</span><span>CampusBot</span></div>
+      <button id="new-chat" class="new-chat">＋ <span>New conversation</span></button>
+      <div class="side-label">YOUR SPACE</div>
+      <button class="side-link active">◷ <span>Chat assistant</span></button>
+      <button id="clear-history" class="side-link">⌫ <span>Clear chat history</span></button>
+      <div class="sidebar-bottom"><div class="bot-avatar">CB</div><div><strong>Campus Assistant</strong><small>Student demo edition</small></div></div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar"><div><span class="online-dot"></span><strong>Campus Assistant</strong><small> · Ready to help</small></div><button id="about-button" class="about-button">About</button></header>
+      <section class="chat-area" id="chat-area">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✳</div>
+          <p class="eyebrow">YOUR STUDY COMPANION</p>
+          <h1>What can I help<br><span>you with today?</span></h1>
+          <p class="welcome-copy">Ask a question or choose a prompt to get started. This academic demo uses a local rule-based response engine.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Explain artificial intelligence in simple words">✦ <span>Explain artificial intelligence</span></button>
+            <button class="suggestion" data-prompt="Give me tips for exam preparation">▤ <span>Exam preparation tips</span></button>
+            <button class="suggestion" data-prompt="What is HTML and CSS?">⌘ <span>Learn HTML and CSS</span></button>
+            <button class="suggestion" data-prompt="Tell me a fun fact about computers">◉ <span>Share a computer fact</span></button>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-live="polite"></div>
+      </section>
+      <form id="chat-form" class="composer">
+        <div class="composer-box"><textarea id="user-input" rows="1" maxlength="600" placeholder="Message CampusBot..." aria-label="Type your message"></textarea>
+          <div class="composer-bottom"><span>Enter to send · Shift + Enter for a new line</span><button id="send-button" type="submit" aria-label="Send message">↑</button></div>
+        </div>
+        <p class="disclaimer">CampusBot can make mistakes. This is a student project demonstration, not a live AI service.</p>
+      </form>
+    </main>
+  </div>
+  <dialog id="about-dialog"><button id="about-close" class="close-dialog">×</button><p class="eyebrow">ABOUT THE PROJECT</p><h2>CampusBot</h2><p>A browser-based chatbot interface created with HTML, CSS and JavaScript. Its response engine uses predefined patterns and a small knowledge base. It does not connect to a commercial AI model or send messages to a server.</p><button id="about-ok" class="primary">Got it</button></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/chatbot.js"></script>
+</body></html>

@@ -1,0 +1,14 @@
+CAMPUSBOT — BCA FINAL YEAR PROJECT
+
+1. Extract this ZIP file.
+2. Open the BCA_AI_Chatbot folder.
+3. Open index.html in a modern browser.
+4. Optional: run `python -m http.server 8000` and visit http://localhost:8000.
+5. Try the suggested questions or ask about AI, HTML, CSS, JavaScript, Python, DBMS and study tips.
+
+Database: database/schema.sql (MySQL 8+). The static demo does not connect to MySQL; the SQL file is a database-design deliverable.
+Report: report/PROJECT_REPORT.pdf
+Synopsis: docs/SYNOPSIS.md
+Documentation: docs/PROJECT_DOCUMENTATION.md
+
+Important: CampusBot is a rule-based educational demo, not a live generative AI service.
